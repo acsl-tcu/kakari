@@ -1,0 +1,11 @@
+% ハイパーリンク 目次とか式番号から飛べるので便利
+%1度目の実行ではバグが起きるのでもう1度実行するように
+%pdfで開いたときにしおりが文字化けしたら以下のコメントアウトを解除する
+
+%\usepackage{atbegshi}
+%\ifnum 42146=\euc"A4A2
+%  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+%\else
+%  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+%\fi
+\usepackage[dvipdfm,colorlinks=false,bookmarks=true,bookmarksnumbered=false,pdfborder={0 0 0},setpagesize=false]{hyperref}

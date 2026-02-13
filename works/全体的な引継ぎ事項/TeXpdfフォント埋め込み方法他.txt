@@ -1,0 +1,83 @@
+*** LaTeXでのフォント埋め込み（dvipdfmxの場合）***
+＞dvipdfmxでpdfファイルを作成する時に読み込むmapファイルのコメントアウトを解除すればOK
+【手順】
+*** Times系の対処 ***
+１．	TeXがインストールされているフォルダ（多分C:w32tex）から
+	TeXインストールフォルダ\shere\texmf\dvipdfmx\config\dvipdfmx.cfg内の下の方にある
+	%f dlbase14.map のコメントアウトを外す（f dlbase14.map）になればOK
+２．	gsがインストールされているフォルダ（多分C:gs or C:ProgramFiles/gs）から
+	gs\gs*.**\Resource\Init内のgs_pdfwr.psを開き初めの方に書いてある
+	/.standardfonts [
+
+	  /Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique
+	  /Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique
+	  /Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic
+	  /Symbol /ZapfDingbats
+] readonly def
+	の埋め込みたいフォントの部分をコメントアウトすれば良いらしい．
+	全部コメントアウトすると
+	/.standardfonts [
+
+	%  /Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique
+	%  /Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique
+	%  /Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic
+	%  /Symbol /ZapfDingbats
+
+	] readonly def
+	になる．（これでどんな影響あるのかは未知．とりあえず今は被害なし）
+*** 日本語（MS明朝，MSゴシック）の対処 ***
+１．	日本語はcid-x.mapをいじる．
+	w32tex\share\texmf\fonts\map\dvipdfmx\base\cid-x.mapを開き
+	100行目付近に書いてある% Ryumin and GothicBBB found in PostScript printers:の部分を変える．
+	rml   H Ryumin-Light
+
+	gbm　 H GothicBBB-Medium
+	
+rmlv  V Ryumin-Light
+	
+gbmv  V GothicBBB-Medium
+	を
+	rml   H msmincho.ttc
+
+	gbm　 H msgothic.ttc
+	
+rmlv  V msmincho.ttc
+	
+gbmv  V msgothic.ttc
+	に変えたら埋め込まれるようになった．（MS明朝，MSゴシックは）
+あとはWinShellでもTeXWorksでもpdf作ればフォント埋め込みになるはず
+２．	styleファイルがjsarticleの場合
+	cid-x.mapと同じフォルダにjis-cjk.mapというファイルを作る．中身は
+	%% for jis fonts of ptex-jisfonts
+	rml-jis H Ryumin-Light
+	gbm-jis H GothicBBB-Medium
+	の３行だけ．
+	あとは，
+	dvipdfmx.cfgの下の方で
+	f jis-cjk.map
+	を追記するだけ．（f cid-x.mapの下とか）
+	jsarticleのstyleファイル使ってて，エラーが出てきたら対処できるかもしれない．
+
+*** コマンドラインでdviファイル，pdfファイルを作成する ***
+＞.texやfigの置いてあるフォルダでコマンドラインに入力する
+【手順】コマンドラインでそのフォルダまで移動
+	platex ***.tex　←これでdviファイルが生成される
+	dvipdfmx  ***.dvi　←これでpdfが生成される
+	pdffonts ***.pdf　←これでpdfのフォントが確認できる．yes yes ***になってれば平気っぽい
+＞オプションをつける
+	dvipdfmx -p letter ***.dvi<-オプションでレターサイズ
+	dvipdfmx -p a4 ***.dvi<-オプションでA4サイズ
+	dvipdfmx -f dlbase14.map ***.dvi <-オプションでTimes系のフォントを埋め込み対象につけた（効果はなぞ）
+	dvipdfmx -p letter -f dlbase14.map -f cid-x.map ***.dvi <-複数のオプションの場合
+
+*** 参考 ***
+http://ameblo.jp/haruya9/entry-10857086602.html
+http://www.eng.kagawa-u.ac.jp/~haruna/memo/PDFeXpress/PDFeXpress.html
+http://d.hatena.ne.jp/shirayuu/20090602/1243937816
+http://www10.atwiki.jp/shirayuu/pages/26.html
+http://www.aise.ics.saitama-u.ac.jp/~gotoh/SubstituteDvipdfmx.html
+
+2013/09/26
+K. Oyama
+
+	
