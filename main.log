@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.sjis) (TeX Live 2024) (preloaded format=platex 2024.9.24)  16 FEB 2026 11:57
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.sjis) (TeX Live 2024) (preloaded format=platex 2024.9.24)  16 FEB 2026 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,6 +156,7 @@ File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `unicode' set `true' on input line 4040.
 Package hyperref Info: Option `colorlinks' set `false' on input line 4040.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4040.
 Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 4040.
@@ -212,6 +213,16 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip52
+) (c:/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+Package: pxjahyper 2024/08/25 v1.5
+ (c:/texlive/2024/texmf-dist/tex/latex/bxjatoucs/bxjatoucs.sty
+Package: bxjatoucs 2024/07/22 v0.3a
+) (c:/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty
+Package: pxjahyper-enc 2024/08/25 v1.5
+) (c:/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper-uni.def
+File: pxjahyper-uni.def 2024/08/25 v1.5
+)
+Package pxjahyper Info: The setup for hyperref 'unicode' is applied.
 ) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
 \l__pdf_internal_box=\box84
@@ -230,48 +241,48 @@ LaTeX Warning: Label `table:shopdata' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 \c@lstlisting=\count296
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 29.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <6> on input line 31.
 
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 34.
 (./main.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -283,7 +294,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
 
 
-[1
+(c:/texlive/2024/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) [1
 
 ]
 
@@ -588,15 +601,15 @@ L3 programming layer <2024-08-30>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 026B3B7D059CEA94A08BC227EABCA4F2;16624.
+(rerunfilecheck)             Checksum: 385F9FB2144B9CDC8013B910EE612666;17736.
  ) 
 Here is how much of TeX's memory you used:
- 9973 strings out of 474238
- 151300 string characters out of 5746574
- 572335 words of memory out of 5000000
- 32725 multiletter control sequences out of 15000+600000
- 569183 words of font info for 80 fonts, out of 8000000 for 9000
+ 10778 strings out of 474238
+ 164287 string characters out of 5746574
+ 581858 words of memory out of 5000000
+ 33510 multiletter control sequences out of 15000+600000
+ 623634 words of font info for 83 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  72i,10n,79p,1378b,1129s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (83 pages, 394508 bytes).
+Output written on main.dvi (83 pages, 396656 bytes).
